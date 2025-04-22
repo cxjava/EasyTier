@@ -126,6 +126,9 @@ fn check_locale() {
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     #[cfg(target_os = "windows")]
+    thunk::thunk();
+
+    #[cfg(target_os = "windows")]
     WindowsBuild::check_for_win();
 
     let proto_files_reflect = ["src/proto/peer_rpc.proto", "src/proto/common.proto"];

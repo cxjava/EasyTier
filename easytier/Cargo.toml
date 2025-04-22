@@ -250,6 +250,7 @@ prost-reflect-build = { version = "0.14.0" }
 [target.'cfg(windows)'.build-dependencies]
 reqwest = { version = "0.12.12", features = ["blocking"] }
 zip = "0.6.6"
+thunk-rs = { version = "0.3.3", features = ["win7"] }
 
 
 [dev-dependencies]
